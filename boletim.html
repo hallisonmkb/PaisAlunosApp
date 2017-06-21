@@ -1,0 +1,245 @@
+﻿<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Aproximação dos pais com seus filhos junto a escola.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pais e Alunos</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Pais e Alunos">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="materialize.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+      <ul class="collapsible" data-collapsible="accordion">
+          <li>
+              <div class="collapsible-header"><span class="new badge">4</span><i class="material-icons">store</i>Turma 101</div>
+              <div class="collapsible-body">
+                  <ul class="collapsible" data-collapsible="accordion">
+                      <li>
+                          <div class="collapsible-header"><i class="material-icons">perm_identity</i>Aluno A</div>
+                          <div class="collapsible-body">
+                              <ul class="collapsible" data-collapsible="accordion">
+                                  <li>
+                                      <div class="collapsible-header"><i class="material-icons">trending_up</i>Desempenho</div>
+                                      <div class="collapsible-body">
+                                          <div class="rating">
+                                              <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                          </div>
+                                          <br />
+                                          <img class="responsive-img" src="images/graph.png">
+                                      </div>
+                                  </li>
+                                  <li>
+                                      <div class="collapsible-header"><i class="material-icons">grade</i>Matérias</div>
+                                      <div class="collapsible-body">
+
+                                          <ul class="collapsible" data-collapsible="accordion">
+                                            <li>
+                                                <div class="collapsible-header"><i class="material-icons">work</i>Biologia</div>
+                                                <div class="collapsible-body">
+                                                  <div id="test-swipe" class="col s12">
+                                                    <div class="row">
+                                                        <div class="row">
+                                                            <form class="col s12">
+                                                                <div class="input-field col s12">
+                                                                  <input name="group1" type="radio" id="cbBimestre1" />
+                                                                  <label for="cbBimestre1">1ºB</label>
+                                                                  <input name="group1" type="radio" id="cbBimestre2" />
+                                                                  <label for="cbBimestre2">2ºB</label>
+                                                                  <input name="group1" type="radio" id="cbBimestre3" />
+                                                                  <label for="cbBimestre3">3ºB</label>
+                                                                  <input name="group1" type="radio" id="cbBimestre4" />
+                                                                  <label for="cbBimestre4">4ºB</label>
+                                                                </div>
+                                                                <div class="input-field col s12">
+                                                                    <input id="nota" type="text" class="validate">
+                                                                    <label for="nota">Nota</label>
+                                                                </div>
+                                                                
+                                                                <div class="input-field col s12">
+                                                                    <input id="NotaData" type="date" class="datepicker">
+                                                                </div>
+                                                                
+                                                                <div class="input-field col s12">
+                                                                    <textarea id="NotaObservacao" class="materialize-textarea"></textarea>
+                                                                    <label for="NotaObservacao">Observação</label>
+                                                                </div>
+                                                                <a class="waves-effect waves-light btn-large" href="#">Confirmar</a>
+                                                                <br>
+                                                                <br>
+                                                                <img class="responsive-img" src="images/graph.png">
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="collapsible-header"><i class="material-icons">work</i>Matemática</div>
+                                                <div class="collapsible-body"></div>
+                                            </li>
+                                            <li>
+                                                <div class="collapsible-header"><i class="material-icons">work</i>Química</div>
+                                                <div class="collapsible-body"></div>
+                                            </li>
+                                            <li>
+                                                <div class="collapsible-header"><i class="material-icons">work</i>Física</div>
+                                                <div class="collapsible-body"></div>
+                                            </li>
+                                            <li>
+                                                <div class="collapsible-header"><i class="material-icons">work</i>Português</div>
+                                                <div class="collapsible-body"></div>
+                                            </li>
+                                            <li>
+                                                <div class="collapsible-header"><i class="material-icons">work</i>Inglês</div>
+                                                <div class="collapsible-body"></div>
+                                            </li>
+                                            <li>
+                                                <div class="collapsible-header"><i class="material-icons">work</i>Geografia</div>
+                                                <div class="collapsible-body"></div>
+                                            </li>
+                                          </ul>
+
+                                       </div>
+                                  </li>
+                                  <li>
+                                      <div class="collapsible-header"><i class="material-icons">assignment</i>Observações</div>
+                                      <div class="collapsible-body">
+                                          <div class="row">
+                                              <form class="col s12">
+                                                  <div class="row">
+                                                      <div class="input-field col s12">
+                                                          <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                                          <label for="textarea1">Observação</label>
+                                                      </div>
+                                                      <a class="waves-effect waves-light btn-large" href="#">Confirmar</a>
+                                                  </div>
+                                              </form>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="collapsible-header"><span class="new badge">2</span><i class="material-icons">perm_identity</i>Aluno B</div>
+                          <div class="collapsible-body"></div>
+                      </li>
+                      <li>
+                          <div class="collapsible-header"><span class="new badge">1</span><i class="material-icons">perm_identity</i>Aluno C</div>
+                          <div class="collapsible-body"></div>
+                      </li>
+                      <li>
+                          <div class="collapsible-header"><i class="material-icons">perm_identity</i>Aluno D</div>
+                          <div class="collapsible-body"></div>
+                      </li>
+                      <li>
+                          <div class="collapsible-header"><span class="new badge">1</span><i class="material-icons">perm_identity</i>Aluno E</div>
+                          <div class="collapsible-body"></div>
+                      </li>
+                      <li>
+                          <div class="collapsible-header"><i class="material-icons">perm_identity</i>Aluno F</div>
+                          <div class="collapsible-body"></div>
+                      </li>
+                  </ul>
+              </div>
+          </li>
+          <li>
+              <div class="collapsible-header"><i class="material-icons">store</i>Turma 102</div>
+              <div class="collapsible-body">
+                  <ul class="collapsible" data-collapsible="accordion">
+                      <li>
+                          <div class="collapsible-header"><i class="material-icons">perm_identity</i>Aluno A</div>
+                          <div class="collapsible-body"></div>
+                      </li>
+                      <li>
+                          <div class="collapsible-header"><i class="material-icons">perm_identity</i>Aluno B</div>
+                          <div class="collapsible-body"></div>
+                      </li>
+                      <li>
+                          <div class="collapsible-header"><i class="material-icons">perm_identity</i>Aluno C</div>
+                          <div class="collapsible-body"></div>
+                      </li>
+                      <li>
+                          <div class="collapsible-header"><i class="material-icons">perm_identity</i>Aluno D</div>
+                          <div class="collapsible-body"></div>
+                      </li>
+                      <li>
+                          <div class="collapsible-header"><i class="material-icons">perm_identity</i>Aluno E</div>
+                          <div class="collapsible-body"></div>
+                      </li>
+                      <li>
+                          <div class="collapsible-header"><i class="material-icons">perm_identity</i>Aluno F</div>
+                          <div class="collapsible-body"></div>
+                      </li>
+                  </ul>
+              </div>
+          </li>
+          <li>
+              <div class="collapsible-header"><i class="material-icons">store</i>Turma 103</div>
+              <div class="collapsible-body">
+                  <ul class="collapsible" data-collapsible="accordion">
+                      <li>
+                          <div class="collapsible-header"><i class="material-icons">perm_identity</i>Aluno A</div>
+                          <div class="collapsible-body"></div>
+                      </li>
+                      <li>
+                          <div class="collapsible-header"><i class="material-icons">perm_identity</i>Aluno B</div>
+                          <div class="collapsible-body"></div>
+                      </li>
+                      <li>
+                          <div class="collapsible-header"><i class="material-icons">perm_identity</i>Aluno C</div>
+                          <div class="collapsible-body"></div>
+                      </li>
+                      <li>
+                          <div class="collapsible-header"><i class="material-icons">perm_identity</i>Aluno D</div>
+                          <div class="collapsible-body"></div>
+                      </li>
+                      <li>
+                          <div class="collapsible-header"><i class="material-icons">perm_identity</i>Aluno E</div>
+                          <div class="collapsible-body"></div>
+                      </li>
+                      <li>
+                          <div class="collapsible-header"><i class="material-icons">perm_identity</i>Aluno F</div>
+                          <div class="collapsible-body"></div>
+                      </li>
+                  </ul>
+              </div>
+          </li>
+      </ul>
+
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="materialize.js"></script>
+      <script src="init.js"></script>
+      
+  </body>
+</html>
